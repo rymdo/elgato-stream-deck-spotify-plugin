@@ -6,12 +6,12 @@
   "author": "rymdo <rymdo.sl@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build:main": "webpack --config ./webpack.config.main.js",
+    "build:plugin": "webpack --config ./webpack.config.plugin.js",
     "build:pi": "webpack --config ./webpack.config.pi.js",
-    "build": "npm-run-all -p -r build:main build:pi",
-    "start:main": "webpack-dev-server --config ./webpack.config.main.js --mode development",
+    "build": "npm-run-all -p -r build:plugin build:pi",
+    "start:plugin": "webpack-dev-server --config ./webpack.config.plugin.js --mode development",
     "start:pi": "webpack-dev-server --config ./webpack.config.pi.js --mode development",
-    "start": "npm-run-all -p -r start:main start:pi"
+    "start": "npm-run-all -p -r start:plugin start:pi"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
