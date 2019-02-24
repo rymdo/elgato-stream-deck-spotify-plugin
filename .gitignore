@@ -62,3 +62,4 @@ typings/
 
 dist/main.js
 dist-pi/main_pi.js
+dist-pi/main.js

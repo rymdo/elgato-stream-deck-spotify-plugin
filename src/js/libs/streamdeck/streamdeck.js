@@ -18,7 +18,7 @@ export class StreamDeckInterface {
   registered = false;
 
   constructor({ interfaceType, port, uuid, registerEvent, info, actionInfo }) {
-    this.interfaceType = type;
+    this.interfaceType = interfaceType;
     this.port = port;
     this.uuid = uuid;
     this.registerEvent = registerEvent;

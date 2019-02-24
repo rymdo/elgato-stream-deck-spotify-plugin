@@ -3,9 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
   mode: 'development',
-  entry: {
-    main_pi: './src/index_pi',
-  },
+  entry: ['@babel/polyfill', './src/index_pi.jsx'],
   output: {
     path: path.resolve(__dirname, 'dist-pi'),
     filename: '[name].js',
