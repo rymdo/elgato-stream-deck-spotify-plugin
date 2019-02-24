@@ -4,8 +4,7 @@ const webpack = require('webpack');
 module.exports = {
   mode: 'development',
   entry: {
-    main: './src/index.js',
-    main_pi: './src/index_pi.js',
+    main: './src/index',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -27,5 +26,6 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
     hot: true,
+    port: 8080,
   },
 };

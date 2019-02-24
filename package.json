@@ -6,8 +6,12 @@
   "author": "rymdo <rymdo.sl@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+    "build:main": "webpack --config ./webpack.config.main.js",
+    "build:pi": "webpack --config ./webpack.config.pi.js",
+    "build": "npm-run-all -p -r build:main build:pi",
+    "start:main": "webpack-dev-server --config ./webpack.config.main.js --mode development",
+    "start:pi": "webpack-dev-server --config ./webpack.config.pi.js --mode development",
+    "start": "npm-run-all -p -r start:main start:pi"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
@@ -15,6 +19,7 @@
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
+    "npm-run-all": "^4.1.5",
     "react-hot-loader": "^4.7.1",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3",
