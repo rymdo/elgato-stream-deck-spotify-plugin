@@ -1,0 +1,8 @@
+{
+  "name": "elgato-stream-deck-spotify-plugin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rymdo/elgato-stream-deck-spotify-plugin.git",
+  "author": "rymdo <rymdo.sl@gmail.com>",
+  "license": "MIT"
+}
