@@ -1,0 +1,36 @@
+{
+  "Actions": [
+    {
+      "Icon": "actionIcon",
+      "Name": "Play/Pause",
+      "States": [
+        {
+          "Image": "actionDefaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Play or Pause current song",
+      "UUID": "se.rymdo.streamdeck.plugin.spotify.playpause"
+    }
+  ],
+  "Author": "Rymdo",
+  "CodePath": "dist/index.html",
+  "PropertyInspectorPath": "dist/index_pi.html",
+  "Description": "Spotify controller plugin for Elgato Stream Deck",
+  "Name": "Spotify Plugin",
+  "Icon": "pluginIcon",
+  "URL": "https://github.com/rymdo/elgato-stream-deck-spotify-plugin.git",
+  "Version": "1.0",
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.11"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ]
+}
